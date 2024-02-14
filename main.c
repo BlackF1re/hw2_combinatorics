@@ -41,7 +41,7 @@ void combinationsGenerator() {
 }
 
 void error() {
-    printf("An error occured.");
+    printf("Ошибка: введены некорректные значения.");
     exit(1);
 }
 
@@ -58,10 +58,8 @@ int main() {
     if (isDigit != 1)
         error();
 
-    if (k > n || k <= 0 || n <= 0 || k > 100 || n> 100) {
-        printf("Введены некорректные значения.\n");
-        exit(1);
-    }
+    if (k > n || k <= 0 || n <= 0 || k > 100 || n > 100)
+        error();
 
     combinationsGenerator();
 
