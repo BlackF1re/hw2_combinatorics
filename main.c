@@ -23,7 +23,7 @@ void generate_combinations(int* arr, int start, int index, int k, int n) {
 }
 
 void error() {
-    printf("Сопляк.");
+    printf("Возникла ошибка.");
     exit(1);
 }
 
