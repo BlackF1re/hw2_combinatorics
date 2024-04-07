@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 #define MAX_SIZE 100
 
 int c[MAX_SIZE + 1];
@@ -26,7 +28,7 @@ void combinationsGenerator() {
         while (j >= 0 && c[j] == n - k + j - 1) {
             j--;
         }
-        if (j == 0) {
+        if (j <= 0) {
             break;
         }
 
